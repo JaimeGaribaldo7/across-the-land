@@ -76,8 +76,6 @@
   </head>
   <body class="container-fluid">
     {{content-for "body"}}
-    <input id="pac-input" class="controls" type="text" placeholder="Search Box">
-    <div id="map" align="middle"></div>
     <script>
     function initAutocomplete() {
         var map = new google.maps.Map(document.getElementById('map'), {
@@ -150,8 +148,14 @@
     </script>
     <script src="{{rootURL}}assets/vendor.js"></script>
     <script src="{{rootURL}}assets/across-the-land.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-grs642V2ygtH5chIq4Zbqr_m085uGbQ&libraries=places&callback=initAutocomplete" async defer></script>
     {{content-for "body-footer"}}
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-grs642V2ygtH5chIq4Zbqr_m085uGbQ&libraries=places&callback=initAutocomplete" async defer></script>
+    <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+    <div class="under-map" align="middle">
+      Explore with satellite view too!
+    </div>
+    <div id="map" align="middle"></div>
 
   </body>
 </html>
