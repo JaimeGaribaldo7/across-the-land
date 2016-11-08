@@ -8,10 +8,10 @@ export default ApplicationSerializer.extend({
   delete serialized.text;
 
   return serialized;
-},
-normalize (model, response) {
+  },
+  normalize (model, response) {
   response.text = response.content;
   delete response.content;
   return this._super(model, response);
-}
+  }
 });

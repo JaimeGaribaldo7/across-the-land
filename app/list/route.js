@@ -12,7 +12,7 @@ actions: {
   deletePlace (place) {
     place.destroyRecord();
   },
-  createItem (newPlace) {
+  createPlace (newPlace) {
     let place = this.get('store').createRecord('place', newPlace);
     place.save();
   },

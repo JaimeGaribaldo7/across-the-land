@@ -20,7 +20,7 @@ actions: {
     this.set('form.text', null);
   },
   edit () {
-    this.sendAction('edit', this.get('edit'));
+    this.sendAction('edit', this.get('list'));
   }
 },
 });

@@ -16,8 +16,7 @@ $darkbg: #296f75;
 
 .app-name {
   color: $black;
-  font-family: fantasy;
-  font-weight: bolder;
+  font-family: roboto;
 }
 
 #navigation {
@@ -49,6 +48,9 @@ $darkbg: #296f75;
   font-weight: bold;
 }
 
+div.gmnoprint {
+  bottom: 10px;
+}
 // .welcome-image {
 //   background: url('https://s3.amazonaws.com/pallettown/2016-10-14/across.png') no-repeat;
 // }
