@@ -1,0 +1,16 @@
+<h3 class="list-header">
+  {{list.title}}
+  <button class="btn btn-xs btn-primary" {{action 'edit'}}>Edit</button>
+</h3>
+<ul>
+  {{#each list.places as |place|}}
+    {{land-list/place place=place
+                      toggleDone='togglePlaceDone'
+                      delete='deletePlace'}}
+  {{/each}}
+</ul>
+<form {{action "createPlace" on="submit"}}>
+{{input placeholder='New Place'
+        class='input-group form-control'
+        value=form.text}}
+</form>

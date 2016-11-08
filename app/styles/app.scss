@@ -1,2 +1,56 @@
 @import 'bootstrap';
 @import 'bootstrap/theme';
+
+$lblue: #d8f3ef;
+$skyblue: lighten($lblue, 34);
+$white: #fff;
+$btw: #e2f7f8;
+$black: #000;
+$bluegreen: rgb(5, 149, 144);
+$darkbg: #296f75;
+
+.navbar-default {
+  background-image: linear-gradient(to bottom, $white 0%, $btw 100%);
+  border-color: $lblue;
+}
+
+.app-name {
+  color: $black;
+  font-family: roboto;
+}
+
+#navigation {
+  background-image: linear-gradient(to bottom, $white 0%, $btw 100%);
+}
+
+#ember421 {
+  color: $bluegreen;
+  font-weight: bold;
+}
+
+#ember457, #ember466 {
+  color: $bluegreen;
+  font-weight: bold;
+}
+
+#ember421:hover {
+  color: $darkbg;
+  font-weight: bold;
+}
+
+#ember457:hover {
+  color: $darkbg;
+  font-weight: bold;
+}
+
+#ember466:hover {
+  color: $darkbg;
+  font-weight: bold;
+}
+
+div.gmnoprint {
+  bottom: 10px;
+}
+// .welcome-image {
+//   background: url('https://s3.amazonaws.com/pallettown/2016-10-14/across.png') no-repeat;
+// }

@@ -1,0 +1,6 @@
+<h3>List Of Places</h3>
+{{#each model as |list|}}
+{{#link-to 'list' list.id}}
+  {{land-list/card title=list.title}}
+  {{/link-to}}
+{{/each}}
